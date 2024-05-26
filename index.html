@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main">
+        <form name="forms">
+            <input type="text" class="ekran" id="display" placeholder="0" disabled>
+            <div class="buttons">
+                <input type="button" value="7" id="button7">
+                <input type="button" value="8" id="button8">
+                <input type="button" value="9" id="button9">
+                <input type="button" value="+" id="buttonPlus">
+                <input type="button" value="4" id="button4">
+                <input type="button" value="5" id="button5">
+                <input type="button" value="6" id="button6">
+                <input type="button" value="-" id="buttonMinus">
+                <input type="button" value="1" id="button1">
+                <input type="button" value="2" id="button2">
+                <input type="button" value="3" id="button3">
+                <input type="button" value="*" id="buttonMultiply">
+                <input type="button" value="C" id="buttonClear">
+                <input type="button" value="0" id="button0">
+                <input type="button" value="/" id="buttonDivide">
+                <input type="button" value="=" id="buttonEquals">
+            </div>
+        </form>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#button1").click(function () {
+                if (document.forms.display.value == 0) {
+                    document.forms.display.value = "";
+                }
+                document.forms.display.value += 1;
+            });
+            $("#button2").click(function () {
+                if (document.forms.display.value == 0) {
+                    document.forms.display.value = "";
+                }
+                document.forms.display.value += 2;
+            });
+            $("#button3").click(function () {
+                if (document.forms.display.value == 0) {
+                    document.forms.display.value = "";
+                }
+                document.forms.display.value += 3;
+            });
+            $("#button4").click(function () {
+                if (document.forms.display.value == 0) {
+                    document.forms.display.value = "";
+                }
+                document.forms.display.value += 4;
+            });
+            $("#button5").click(function () {
+                if (document.forms.display.value == 0) {
+                    document.forms.display.value = "";
+                }
+                document.forms.display.value += 5;
+            });
+            $("#button6").click(function () {
+                if (document.forms.display.value == 0) {
+                    document.forms.display.value = "";
+                }
+                document.forms.display.value += 6;
+            });
+            $("#button7").click(function () {
+                if (document.forms.display.value == 0) {
+                    document.forms.display.value = "";
+                }
+                document.forms.display.value += 7;
+            });
+            $("#button8").click(function () {
+                if (document.forms.display.value == 0) {
+                    document.forms.display.value = "";
+                }
+                document.forms.display.value += 8;
+            });
+            $("#button9").click(function () {
+                if (document.forms.display.value == 0) {
+                    document.forms.display.value = "";
+                }
+                document.forms.display.value += 9;
+            });
+            $("#button0").click(function () {
+                if (document.forms.display.value == 0) {
+                    document.forms.display.value = "";
+                }
+                document.forms.display.value += 0;
+            });
+            $("#buttonPlus").click(function () {
+                document.forms.display.value += '+';
+            });
+            $("#buttonMinus").click(function () {
+                document.forms.display.value += '-';
+            });
+            $("#buttonMultiply").click(function () {
+                document.forms.display.value += '*';
+            });
+            $("#buttonDivide").click(function () {
+                document.forms.display.value += '/';
+            });
+            $("#buttonClear").click(function () {
+                document.forms.display.value = 0;
+            });
+            $("#buttonEquals").click(function () {
+                if (display.value === "") {
+                }
+                else {
+                    document.forms.display.value = eval(document.forms.display.value);
+                }
+            });
+        })
+    </script>
+</body>
+
+</html>

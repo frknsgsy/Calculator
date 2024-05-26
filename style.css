@@ -1,0 +1,145 @@
+@font-face {
+    font-family: digit;
+    src: url('digital-7.ttf') format('truetype');
+}
+
+body {
+    background: linear-gradient(rgb(126, 82, 128), rgb(61, 19, 71));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main {
+    background-color: rgb(183, 130, 233);
+    width: 550px;
+    height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -225px;
+    margin-top: -350px;
+    border-radius: 25px;
+    box-shadow: 50px 50px rgb(85, 19, 139), 45px 45px rgb(85, 19, 139), 40px 40px rgb(85, 19, 139),
+        35px 35px rgb(85, 19, 139), 30px 30px rgb(85, 19, 139), 25px 25px rgb(85, 19, 139),
+        20px 20px rgb(85, 19, 139), 15px 15px rgb(85, 19, 139), 10px 10px rgb(85, 19, 139),
+        5px 5px rgb(85, 19, 139), 55px 55px rgb(100, 100, 100), 2px 2px white inset;
+
+    transform: rotate(10deg) skew(-15deg);
+    transform: perspective(-15px);
+    transition: 0.75s ease-in-out;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.ekran {
+    font-family: digit;
+    background-color: rgb(255, 246, 235);
+    width: 476px;
+    height: 100px;
+    position: relative;
+    left: 50%;
+    margin-left: -238px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 90px;
+    color: black;
+    box-shadow: 10px 15px rgb(85, 19, 139) inset;
+
+}
+
+.buttons {
+    background-color: rgba(164, 115, 209, 0.384);
+    width: 452px;
+    height: 450px;
+    position: relative;
+    left: 50%;
+    margin-left: -238px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+#display {
+    outline: none;
+}
+
+#buttonClear,
+#buttonDivide,
+#buttonDelete,
+#buttonMultiply,
+#button7,
+#button8,
+#button9,
+#buttonMinus,
+#button4,
+#button5,
+#button6,
+#buttonPlus,
+#button1,
+#button2,
+#button3,
+#buttonEquals,
+#button0,
+#buttonDot {
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+    font-family: digit;
+    font-size: 85px;
+    background-color: azure;
+    border: 0px;
+    box-shadow: 12px 10px rgb(85, 19, 139);
+    border-radius: 25px;
+    transition: all 0.2s ease;
+}
+
+#buttonClear,
+#buttonDivide,
+#buttonDelete,
+#buttonMultiply,
+#buttonMinus,
+#buttonPlus,
+#buttonEquals,
+#buttonDot {
+    background-color: rgb(165, 104, 223);
+    color: white;
+}
+
+
+
+
+#buttonClear:hover,
+#buttonDivide:hover,
+#buttonDelete:hover,
+#buttonMultiply:hover,
+#button7:hover,
+#button8:hover,
+#button9:hover,
+#buttonMinus:hover,
+#button4:hover,
+#button5:hover,
+#button6:hover,
+#buttonPlus:hover,
+#button1:hover,
+#button2:hover,
+#button3:hover,
+#buttonEquals:hover,
+#button0:hover,
+#buttonDot:hover {
+    background-color: rgb(204, 177, 255);
+
+}
